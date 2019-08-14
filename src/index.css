@@ -1,9 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Righteous&display=swap');
+
+:root {
+  --yellow: #F9C76A;
+  --blue: #297090;
+}
+body {
+  font-family: 'Poiret One', cursive;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
-h1, p {
-  font-family: Lato;
+
+.container-fluid h1 {
+  font-family: 'Righteous', cursive;
+  color: var(--yellow);
+  text-align: center;
+  padding-bottom: 2rem;
+  text-shadow: 2px 2px var(--blue);
+}
+
+/* SEARCH HEADER */
+.searchSection {
+  padding: 5rem;
+  background: url("/img/header1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.searchSection input {
+  font-size: 1.3rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.fa-search {
+  font-size: 2rem;
+  color: var(--blue);
+}
+.searchSection button {
+  border: none;
+  background: none;
 }
 
 
