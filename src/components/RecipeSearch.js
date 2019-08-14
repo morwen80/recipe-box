@@ -11,20 +11,20 @@ class RecipeSearch extends React.Component {
   render(){
     return (
       <div className="container-fluid searchSection">
-      <h1 class="display-1">Recipe Box</h1>
+      <h1 className="display-1">Recipe Box</h1>
         <form onSubmit={this.props.fetchRecipes}>
-        <div class="input-group mb-3">
+        <div className="input-group mb-3">
           <input
             value={this.props.term}
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="search recipe"
             aria-label="Search Recipe"
             aria-describedby="basic-addon2"
             onChange={this.props.handleChange}
           />
-          <div class="input-group-append">
-            <span class="input-group-text"><button type="submit"><i class="fas fa-search"></i></button></span>
+          <div className="input-group-append">
+            <span className="input-group-text"><button type="submit"><i className="fas fa-search"></i></button></span>
           </div>
         </div>
         </form>

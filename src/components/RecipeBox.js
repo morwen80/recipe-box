@@ -30,12 +30,16 @@ class RecipeBox extends React.Component {
     const renderRecipes = currentRecipes.map((rec, idx) => {
       return (
         <div className="recipeCard" key={rec.id} id={rec.id}>
-      <h2 className="text-center">{rec.strMeal}</h2>
-      <div class="row">
-        <div class="col-sm-7">
-      <p className="instructions">{rec.strInstructions}</p>
-      </div>
-      <div class="col-sm-5">col-sm-4</div>
+          <h2 className="text-center">{rec.strMeal}</h2>
+          <div className="row">
+            <div className="col-sm-6">
+          <p className="instructions">{rec.strInstructions}</p>
+          </div>
+          <div className="col-sm-6">
+            <iframe title={rec.strMeal} width="560" height="315" src={(rec.strYoutube).replace("watch?v=", "embed/")}
+            frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen >
+            </iframe>
+          </div>
       </div>
 
     </div>

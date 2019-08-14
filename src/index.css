@@ -76,12 +76,14 @@ h1 {
 
 /* RECIPE CARD  */
  .recipeCard {
-   border: 2px solid black;
+   /* border: 2px solid var(--blue); */
    padding: 1rem;
    margin-bottom: 1rem;
  }
  .recipeCard h2 {
    padding-bottom: .6rem;
+   font-family: 'Righteous', cursive;
+   color: var(--blue);
 
  }
  .instructions {
