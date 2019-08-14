@@ -30,16 +30,24 @@ class RecipeBox extends React.Component {
     const renderRecipes = currentRecipes.map((rec, idx) => {
       return (
         <div className="recipeCard" key={rec.id} id={rec.id}>
-      <h2>{rec.strMeal}</h2>
-      <hr/>
+      <h2 className="text-center">{rec.strMeal}</h2>
+      <div class="row">
+        <div class="col-sm-7">
       <p className="instructions">{rec.strInstructions}</p>
+      </div>
+      <div class="col-sm-5">col-sm-4</div>
+      </div>
+
     </div>
       )
     })
 
     return (
-      <div className="recipeBox">
-       {renderRecipes}
+      <div className="recipeBox container-fluid">
+      {renderRecipes}
+
+
+
 
        <Pagination
        recipes={this.props.recipe}

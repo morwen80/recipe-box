@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One|Righteous&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway|Righteous&display=swap');
 :root {
   --yellow: #F9C76A;
   --blue: #297090;
 }
+
 body {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 
 * {
@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 
-.container-fluid h1 {
+h1 {
   font-family: 'Righteous', cursive;
   color: var(--yellow);
   text-align: center;
@@ -66,8 +66,7 @@ body {
  /* RECIPE BOX */
  .recipeBox {
    margin: 0 auto;
-   padding: 1rem;
-   border: 2px dashed black;
+   padding: 2rem 1rem 1rem 1rem;
  }
  .recipeBox h3 {
    text-align: center;
