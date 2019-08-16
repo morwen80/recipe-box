@@ -73,19 +73,26 @@ h1 {
    padding-bottom: 1rem;
    text-transform: uppercase;
  }
+ .recipeBox h5 {
+   font-family: 'Righteous', cursive;
+   font-weight: 700;
+   font-size: 1.4rem;
+ }
 
 /* RECIPE CARD  */
  .recipeCard {
-   /* border: 2px solid var(--blue); */
    padding: 1rem;
    margin-bottom: 1rem;
  }
  .recipeCard h2 {
-   padding-bottom: .6rem;
+   text-align: center;
+   padding-bottom: 1rem;
    font-family: 'Righteous', cursive;
    color: var(--blue);
-
  }
- .instructions {
-   padding-top: 1rem;
+
+ .recipeCard iframe {
+   border: 2px dashed var(--yellow) !important;
+   padding: .8rem;
+   border-radius: 10px !important;
  }

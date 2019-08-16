@@ -8,7 +8,9 @@ class App extends React.Component {
     super()
     this.state = {
       term: '',
-      recipe: []
+      recipe: [],
+      currentPage: 1,
+      recipesPerPage: 2
     }
   }
      componentDidMount = () => {
