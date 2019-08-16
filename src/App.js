@@ -23,7 +23,6 @@ class App extends React.Component {
     this.setState({ term: e.target.value})
   }
 
-
   fetchRecipes = (e) => {
     e.preventDefault();
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${this.state.term}`)

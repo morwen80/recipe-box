@@ -18,7 +18,6 @@ class RecipeBox extends React.Component {
   }
 
   render(){
-
     const { currentPage, recipesPerPage} = this.state
     const {recipe} = this.props
 
@@ -27,54 +26,10 @@ class RecipeBox extends React.Component {
     const currentRecipes = recipe.slice(indexOfFirstRecipe, indexOfLastRecipe)
 
 
-    // let newObj = {}
-    // const newObjKeys = Object.keys(currentRecipes[0]).filter(key => key.includes('strIngredient'))
+    let newObj = {}
+    const newObjKeys = currentRecipes.length && Object.keys(currentRecipes[0]).filter(key => key.includes('strIngredient'))
     //
-    // newObjKeys.forEach(key => {newObj[key] = currentRecipes[key]})
-    //
-    // console.log(newObjKeys)
-    //
-
-
-        // let newObj = {}
-        // const newObjKeys = Object.keys(currentRecipes[0]).filter(key => key.includes('strIngredient'))
-        //
-        // newObjKeys.forEach(key => { newObj[key] = currentRecipes[key] })
-        //
-        //
-
-
-    //
-    // let ingr = /strIngredient/g;
-    //
-    // const showIngredients = recipe.map(item => item.match(ingr))
-    // console.log(showIngredients)
-
-
-
-
-
-
-
-    //   currentRecipes.map(rec => <li key={rec.id}>
-    //    {rec.strIngredient[i]}, {rec.strMeasure[i]}
-    //    </li>
-    //  )
-    // }
-
-    // const ingredientList = currentRecipes.map(rec =>
-    //   <li key={rec.id}>
-    //   {rec["strIngredient"]}, {rec["strMeasure"]}
-    //   </li>
-    // )
-
-
-  //   const tempIngr = []
-  //     for(let i = 1; i <= 20; i++) {
-  //       tempIngr.push(`rec.strIngredient${i}`)
-  //     }
-  //
-  // const showIngredients = tempIngr.map( item => item )
+    newObjKeys && newObjKeys.forEach(key => {newObj[key] = currentRecipes[0][key]})
 
 
     const renderRecipes = currentRecipes.map((rec, idx) => {
@@ -112,9 +67,6 @@ class RecipeBox extends React.Component {
     return (
       <div className="recipeBox container-fluid">
       {renderRecipes}
-
-
-
 
        <Pagination
        recipes={this.props.recipe}
