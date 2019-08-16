@@ -8,9 +8,7 @@ class App extends React.Component {
     super()
     this.state = {
       term: '',
-      recipe: [],
-      currentPage: 1,
-      recipesPerPage: 2
+      recipe: []
     }
   }
      componentDidMount = () => {
@@ -41,8 +39,6 @@ class App extends React.Component {
 
        <RecipeBox
         recipe={this.state.recipe}
-        currentPage={this.state.currentPage}
-        recipesPerPage={this.state.recipesPerPage}
         />
        </div>
     )}
